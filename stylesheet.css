@@ -50,6 +50,7 @@ h2 {
     display: flex;
     background-color: #1F2937;
     color: oldlace;
+    justify-content: end;
 }
 
 .header-logo {
@@ -65,7 +66,7 @@ h2 {
     }
 
 .links {
-    margin-left: 50em;
+    margin-right:auto 20px;
 }
 
 a {
@@ -95,26 +96,13 @@ a {
 
 
 
-
-
-
-.fourelements {
-    display: flex;
-}
-
-
-
-.fourelements > img {
-    max-height: 300px;
-    max-width: auto;
-}
-
 .title {
     display: flex;
     flex-wrap: wrap;
     max-width: 750px;
     margin-left: 20em;
     justify-content:center;
+    
 }
 
 .subtext {
@@ -122,6 +110,7 @@ a {
     flex-wrap: wrap;
     max-width: 750px;
     margin-left: 20em;
+    
 }
 
 
@@ -164,13 +153,6 @@ h2 {
 }
 
 .javascript > img {
-    max-height: 100px;
-    min-height: 100px;
-    max-width: 100px;
-    min-width: 100px;
-}
-
-.html > img {
     max-height: 100px;
     min-height: 100px;
     max-width: 100px;
@@ -227,10 +209,11 @@ h2 {
 }
 
 
+
 /*Skillsets END*/
 
 
-/*Quote START*/
+/*About START*/
 
 .content-greybackground {
     background-color: #e5e7eb;
@@ -240,7 +223,7 @@ h2 {
 }
 
 
-/*Quote END*/
+/*About END*/
 
 /*Call to Action START*/
 
