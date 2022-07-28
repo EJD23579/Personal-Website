@@ -144,13 +144,18 @@ h2 {
 }
 
 
-
 .python > img {
     max-height: 100px;
     min-height: 100px;
     max-width: 100px;
     min-width: 100px;
+    cursor: pointer;
 }
+
+#showPy {
+    opacity: 0;
+}
+
 
 .javascript > img {
     max-height: 100px;
