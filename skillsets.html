@@ -5,92 +5,156 @@
     <meta charset="utf-8" />
     <title>Skills</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="Script.js"></script>
+    <script src="skillsetScript.js"></script>
 </head>
 <body>
-<div class=" container">
-    <div class="navigation">
-        <div class="Links">
-            <a href="index.html"> Home </a>
+    <div class=" container">
+        <div class="navigation">
+            <div class="Links">
+                <a href="index.html"> Home </a>
 
-            <a href="Career Aspirations.html"> Career Aspirations</a>
-            <a href="https://github.com/EJD23579"> Github</a>
-            <a href="Contact Details.html"> Contact Details </a>
+                <a href="Career Aspirations.html"> Career Aspirations</a>
+                <a href="https://github.com/EJD23579"> Github</a>
+                <a href="Contact Details.html"> Contact Details </a>
+            </div>
         </div>
-    </div>
 
 
-    <div class="title">
-        <h2> Skillsets </h2>
-    </div>
-    <p1>
-        I am a self taught developer, and have gained experience with open source learning materials
-        as well as paid courses. However, I have gained the most experience from working on my own projects, such as this website and also the other projects on my Github. Please find the
-        link below to my Github page, in the blue box! <br /><br />
-        I started out learning Javascript, HTML and CSS before moving onto learning Python and PostgreSQL.
-        The next language I am working on is C#. I have completed courses on Udemy, such as:
-    </p1>
+        <div class="title">
+            <h2> Skillsets </h2>
+        </div>
 
-    <ul>
-        <li>Automate the Boring Stuff with Python</li>
-        <li>Complete PostgreSQL bootcamp 2022</li>
-        <li>C# Masterclass (In progress)</li>
-    </ul>
+        <p1>
+            I am a self taught developer, and have gained experience with open source learning materials
+            as well as paid courses. However, I have gained the most experience from working on my own projects, such as this website and also the other projects on my Github. Please find the
+            link below to my Github page, in the blue box! <br /><br />
+            I started out learning Javascript, HTML and CSS before moving onto learning Python and PostgreSQL.
+            The next language I am working on is C#. I have completed courses on Udemy, such as:
+        </p1>
 
-    <div class="skillset">
+        <ul>
+            <li>Automate the Boring Stuff with Python</li>
+            <li>Complete PostgreSQL bootcamp 2022</li>
+            <li>C# Masterclass (In progress)</li>
+        </ul>
 
-        <h2> Programming Skills </h2>
-        <p1> <strong>Click the images to find out more...</strong></p1>
-        <div class="images-and-text">
-            <div class="topic-1">
-                <div class="python">
-                    <img src="images\Python_logo_01.png" alt="python logo" onclick="fadeInPy()">
-                </div>
-                <div id="showPy"
+        <div class="skillset">
+
+            <h2> Programming Skills </h2>
+            <p1> <strong>Click the images to find out more...</strong></p1>
+            <div class="images-and-text">
+                <div class="topic-1">
+                    <div class="python">
+                        <img src="images\Python_logo_01.png" alt="python logo" onclick="fadeInPy()">
+                    </div>
+                    <div id="showPy">
 
                 <p1>
                     I have completed the 'Automate the Boring Stuff with Python' course on Udemy. I enjoy writing in Python and am comfortable with
                     functions, dataframes and module useage. I have created an investment analysis project using Python and PostgreSQL which is available on my Github account.
                 </p1>
                 </div>
+                </div>
+                <div class="topic-2">
+                    <div class="javascript">
+                        <img src="images\Javascript_Logo.png" alt="javascript logo" onclick="fadeInJs()">
+                    </div>
+                    <div id="showJs">
+                        <p2>
+                            I enjoy using JavaScript and would like to gain more experience with it. This website uses Javascript to add interactivity, such as this fade in effect!
+                            Other projects used are the 'Rock, Paper, Scissors' repo on my Github, and the Language Learning Application too. The latter of these is designed using Node.Js and the React framework.
+                        </p2>
+                    </div>
+                </div>
+
+                <div class="topic-3">
+                    <div class="css">
+                        <img src="images\CSS3_logo_and_wordmark.png" alt="css logo" onclick="fadeInCSS()">
+                    </div>
+                    <div id="showCSS">
+                        <p4> This website is the best example of my HTML and CSS skills. I feel confident creating websites and editing them using HTML and CSS. </p4>
+                    </div>
+                </div>
+                <div class="topic-4">
+                    <div class="postgresql">
+                        <img src="images\Postgresql_elephant.png" alt="postgresql logo" onclick="fadeInPSQL()">
+                    </div>
+                    <div id="showPSQL">
+                        <p5>
+                            For the best example of using PostgreSQL, please look for the financial analysis application on my Github. I have completed a Udemy course
+                            on PostgreSQL and understand how to set this up with PgAdmin. I can comfortable use this, in conjunction with other technologies such as Python,
+                            to add and retrieve data from databases, as well as navigate the database using SQL.
+                        </p5>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
-            <div class="topic-2">
-                <div class="javascript">
-                    <img src="images\Javascript_Logo.png" alt="javascript logo" onclick="fadeInJs()">
-                </div>
-                <div id="showJs">
-                    <p2> I enjoy using JavaScript and would like to gain more experience with it. This website uses Javascript to add interactivity, such as this fade in effect!
-                         Other projects used are the 'Rock, Paper, Scissors' repo on my Github, and the Language Learning Application too. The latter of these is designed using Node.Js and the React framework.
-                    </p2>
-                </div>
-            </div>
-
-            <div class="topic-3">
-                <div class="css">
-                    <img src="images\CSS3_logo_and_wordmark.png" alt="css logo" onclick="fadeInCSS()">
-                </div>
-                <div id="showCSS">
-                    <p4> This website is the best example of my HTML and CSS skills. I feel confident creating websites and editing them using HTML and CSS. </p4>
-                </div>
-            </div>
-            <div class="topic-4">
-                <div class="postgresql">
-                    <img src="images\Postgresql_elephant.png" alt="postgresql logo" onclick="fadeInPSQL()">
-                </div>
-                <div id="showPSQL">
-                    <p5> For the best example of using PostgreSQL, please look for the financial analysis application on my Github. I have completed a Udemy course
-                         on PostgreSQL and understand how to set this up with PgAdmin. I can comfortable use this, in conjunction with other technologies such as Python,
-                         to add and retrieve data from databases, as well as navigate the database using SQL.</p5>
-                </div>
-            </div>
-
-
-
-
-
-
 
         </div>
+
+
+        <div class="skillset">
+
+            <h2> Programming Skills (in development) </h2>
+            <p1> <strong>Click the images to find out more...</strong></p1>
+            <div class="images-and-text">
+                <div class="topic-5">
+                    <div class="csh">
+                        <img src="images\Csharp_Logo.png" alt="C# logo" width="100" onclick="fadeInCsh()">
+                    </div>
+                    <div id="showCsh">
+
+                <p1>
+                    I am currently working through a C# course on Udemy and will start creating C# applications to show on my Github when ready.
+                </p1>
+                </div>
+                </div>
+                <div class="topic-6">
+                    <div class="dotNet">
+                        <img src="images\Microsoft_.NET_logo.png" alt=".net logo" width=" 100" onclick="fadeInDotNet()">
+                    </div>
+                    <div id="showDotNet">
+                        <p2>
+                            The more I am using C# and Visual Studio, the more I am learning about .Net and am working to use it in my programming. I understand it is a very efficient framework and will be very useful to learn. 
+                        </p2>
+                    </div>
+                </div>
+
+                <div class="topic-7">
+                    <div class="react">
+                        <img src="images\React-icon.png" alt="React logo" width="100" onclick="fadeInReact()">
+                    </div>
+                    <div id="showReact">
+                        <p4> React is a very useful framework to learn for user interfaces. Because of its popularity I am using it to create the front end for some projects of mine, including a language learning application which is available on my Github. </p4>
+                    </div>
+                </div>
+               
+
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <div class="gitDetails">
             <div class="gitDetails-content">
@@ -112,6 +176,8 @@
 
 
         </div>
+
+
         <div class="footer">
             <div class="footer-text">
                 <p>
