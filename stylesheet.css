@@ -1,5 +1,9 @@
 ﻿html {
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    color: white;
 }
 
 body {
@@ -8,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     overflow-x:hidden;
+    position: absolute;
     
 }
 
@@ -37,11 +42,25 @@ button {
     flex-shrink: 0;
 }
 
-h2 {
-    font-size: 24px;
-    color: #1f2937;
+h1 {
+    color: white;
 }
 
+
+h2 {
+    font-size: 24px;
+    color: white;
+}
+
+canvas {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    margin: 0px;
+}
 
 
 /*Global Settings End*/
@@ -55,17 +74,7 @@ h2 {
     justify-content: end;
 }
 
-.header-logo {
-    display: flex;
-    margin-left: 20em;
-}
 
-    .header-logo > img {
-        max-height: 100px;
-        min-height: 100px;
-        max-width: 100px;
-        min-width: 100px;
-    }
 
 .links {
     margin-right:auto 20px;
@@ -83,10 +92,7 @@ a {
     min-height: 300px;
 }
 
-.title {
-    display:flex;
 
-}
 
 
 /*Navbar and Header Logo END*/
@@ -143,17 +149,31 @@ h2 {
 /*Landing page START*/
 
 
+
+
+
 .subtext {
+    color:aliceblue;
     display: flex;
     
+    
+}
+
+.text {
+    display: flex;
+    padding:32px;
+    align-self:center;
+    color:aliceblue;
 }
 
 
 
-#selfPhoto{
-    display:flex;
+
+#selfPhoto {
+    display: flex;
     height: auto;
-    justify-content:center;
+    justify-content: center;
+   
 }
 
 .img > img {
@@ -167,6 +187,7 @@ h2 {
 .fade-in-container-1 {
     display: flex;
     flex-direction: row;
+
    }
 
 .fade-in-container-2 {
@@ -177,11 +198,13 @@ h2 {
 .content-greybackground {
     display:flex;
     
-    background-color: #e5e7eb;
+    background-color: none;
     color: #1F2937;
     padding: 64px;
     justify-content: center;
 }
+
+
 
 /* Animations START */
 
@@ -263,6 +286,7 @@ h2 {
     -o-animation-delay: 0,5s;
     animation: fadeInLeft 2s both;
     animation-delay: 0,5s;
+
 }
 
 @-webkit-keyframes fadeInLeft {
@@ -423,6 +447,14 @@ h2 {
     opacity: 0;
 }
 
+#showDocker {
+    opacity: 0;
+}
+
+#showAWS {
+    opacity: 0;
+}
+
 /*Image Settings*/
 
 .python > img {
@@ -472,6 +504,15 @@ h2 {
     cursor: pointer;
 }
 
+.docker > img {
+    height: auto;
+    cursor: pointer;
+}
+
+.AWS > img {
+    height: auto;
+    cursor: pointer;
+}
 
 
 .topic-1 {
@@ -530,6 +571,23 @@ h2 {
     max-width: 200px;
 }
 
+.topic-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    max-width: 200px;
+}
+
+.topic-9 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    max-width: 200px;
+}
+
+
 
 /*Skillsets END*/
 
@@ -550,7 +608,7 @@ h2 {
     display:flex;
     justify-content:flex-end;
     margin-right: 10em;
-    border-color:cornflowerblue;
+    border-color:none;
 }
 
 
@@ -571,7 +629,7 @@ h2 {
 
 .gitDetails {
     display: flex;
-    background-color: white;
+    background-color: none;
     justify-content: center;
 }
 

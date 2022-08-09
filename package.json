@@ -1,0 +1,23 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "skillsetScript.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EJD23579/Personal-Website.git"
+  },
+  "author": "Elliot Dorey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EJD23579/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/EJD23579/Personal-Website#readme",
+  "dependencies": {
+    "three": "^0.143.0",
+    "three-orbitcontrols": "^2.110.3"
+  }
+}

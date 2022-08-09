@@ -6,16 +6,19 @@
     <title>Skills</title>
     <link rel="stylesheet" href="stylesheet.css">
     <script src="skillsetScript.js"></script>
+    <script type="module" src="main.js" defer></script>
 </head>
 <body>
     <div class=" container">
         <div class="navigation">
             <div class="Links">
-                <a href="index.html"> Home </a>
-
+                <a href="index.html"> Home</a>
+                <a href="skillsets.html"> Skillsets </a>
                 <a href="Career Aspirations.html"> Career Aspirations</a>
                 <a href="https://github.com/EJD23579"> Github</a>
                 <a href="Contact Details.html"> Contact Details </a>
+
+
             </div>
         </div>
 
@@ -24,20 +27,25 @@
             <h2> Skillsets </h2>
         </div>
 
-        <p1>
-            I am a self taught developer, and have gained experience with open source learning materials
-            as well as paid courses. However, I have gained the most experience from working on my own projects, such as this website and also the other projects on my Github. Please find the
-            link below to my Github page, in the blue box! <br /><br />
-            I started out learning Javascript, HTML and CSS before moving onto learning Python and PostgreSQL.
-            The next language I am working on is C#. I have completed courses on Udemy, such as:
-        </p1>
 
-        <ul>
-            <li>Automate the Boring Stuff with Python</li>
-            <li>Complete PostgreSQL bootcamp 2022</li>
-            <li>C# Masterclass (In progress)</li>
-        </ul>
+        <canvas id="bg">
+        </canvas>
 
+        <div class="top">
+            <p1>
+                I am a self taught developer, and have gained experience with open source learning materials
+                as well as paid courses. However, I have gained the most experience from working on my own projects, such as this website and also the other projects on my Github. Please find the
+                link below to my Github page, in the blue box! <br /><br />
+                I started out learning Javascript, HTML and CSS before moving onto learning Python and PostgreSQL.
+                The next language I am working on is C#. I have completed courses on Udemy, such as:
+            </p1>
+
+            <ul>
+                <li>Automate the Boring Stuff with Python</li>
+                <li>Complete PostgreSQL bootcamp 2022</li>
+                <li>C# Masterclass (In progress)</li>
+            </ul>
+        </div>
         <div class="skillset">
 
             <h2> Programming Skills </h2>
@@ -99,7 +107,7 @@
 
         <div class="skillset">
 
-            <h2> Programming Skills (in development) </h2>
+            
             <p1> <strong>Click the images to find out more...</strong></p1>
             <div class="images-and-text">
                 <div class="topic-5">
@@ -108,19 +116,19 @@
                     </div>
                     <div id="showCsh">
 
-                <p1>
-                    I am currently working through a C# course on Udemy and will start creating C# applications to show on my Github when ready.
-                </p1>
-                </div>
+                        <p1>
+                            <em> (In Progress) </em> <br /><br /> I am currently working through a C# course on Udemy and will start creating C# applications to show on my Github when ready.
+                        </p1>
+                    </div>
                 </div>
                 <div class="topic-6">
                     <div class="dotNet">
                         <img src="images\Microsoft_.NET_logo.png" alt=".net logo" width=" 100" onclick="fadeInDotNet()">
                     </div>
                     <div id="showDotNet">
-                        <p2>
-                            The more I am using C# and Visual Studio, the more I am learning about .Net and am working to use it in my programming. I understand it is a very efficient framework and will be very useful to learn. 
-                        </p2>
+                        <p1>
+                            <em> (In Progress) </em> <br /><br /> The more I am using C# and Visual Studio, the more I am learning about .Net and am working to use it in my programming. I understand it is a very efficient framework and will be very useful to learn.
+                        </p1>
                     </div>
                 </div>
 
@@ -129,18 +137,38 @@
                         <img src="images\React-icon.png" alt="React logo" width="100" onclick="fadeInReact()">
                     </div>
                     <div id="showReact">
-                        <p4> React is a very useful framework to learn for user interfaces. Because of its popularity I am using it to create the front end for some projects of mine, including a language learning application which is available on my Github. </p4>
+                        <p1> 
+                            <em> (In Progress) </em><br /><br /> React is a very useful framework to learn for user interfaces. Because of its popularity I am using it to create the front end for some projects of mine, including a language learning application which is available on my Github.
+                        </p1>
                     </div>
                 </div>
-               
 
+                <div class="topic-8">
+                    <div class="docker">
+                        <img src="images\Docker_(container_engine)_logo.png" alt="Docker logo" width="100" onclick="fadeInDocker()">
+                    </div>
+                    <div id="showDocker">
+                        <p1>
+                            <em> (In Progress) </em><br /><br />  To better understand the lifecycle of software development, I have started to learn how to use Docker. This involves running through their tutorial and documentation, and I will be using this to deploy some applications in the future.
+                        </p1>
+                    </div>
+                </div>
 
-
-
+                    <div class="topic-9">
+                        <div class="AWS">
+                            <img src="images\768px-Amazon_Web_Services_Logo.png" alt="AWS logo" width="100" onclick="fadeInAWS()">
+                        </div>
+                        <div id="showAWS">
+                            <p1>
+                                <em> (In Progress) </em><br /><br />  I am currently working through AWS free qualifications to better understand cloud computing services.
+                            </p1>
+                        </div>
+                    </div>
 
             </div>
 
         </div>
+               
 
 
 

@@ -5,43 +5,44 @@
     <meta charset="utf-8" />
     <title>Elliot Dorey</title>
     <link rel="stylesheet" href="stylesheet.css">
-    </head>
+    <script type="module" src="main.js" defer></script>
+    
+</head>
 <body>
-        
-        <div class="container">
-            <div class="navigation">
-                <div class="Links">
-
-                    <a href="skillsets.html"> Skillsets </a>
-                    <a href="Career Aspirations.html"> Career Aspirations</a>
-                    <a href="https://github.com/EJD23579"> Github</a>
-                    <a href="Contact Details.html"> Contact Details </a>
-
-
-                </div>
-            </div>
-
-            <div class="title">
-                <h2> Introduction</h2>
-            </div>
-
-
-
-            <div class="content-whitebackground">
-                <div class="subtext top">
-                    <p>
-                        My name is Elliot Dorey and I am looking for work as a software developer. I have created this
-                        site to showcase the skills I have learnt and also to tell you about myself.
-
-                        <b>Please scroll down to learn more!</b>
-                    </p>
-                </div>
-
-
-
+    
+    <div class="container">
+        <div class="navigation">
+            <div class="Links">
+                <a href="index.html"> Home</a>
+                <a href="skillsets.html"> Skillsets </a>
+                <a href="Career Aspirations.html"> Career Aspirations</a>
+                <a href="https://github.com/EJD23579"> Github</a>
+                <a href="Contact Details.html"> Contact Details </a>
 
 
             </div>
+        </div>
+
+        <div class="title">
+            <h2> Introduction</h2>
+        </div>
+
+        <canvas id="bg">
+        </canvas>
+
+
+        <div class="content-whitebackground">
+            <div class="subtext">
+
+
+                <p>
+                    My name is Elliot Dorey and I am looking for work as a software developer. I have created this
+                    site to showcase the skills I have learnt and also to tell you about myself.
+
+                    <b>Please scroll down to learn more!</b>
+                </p>
+            </div>
+
 
 
 
@@ -49,30 +50,32 @@
         </div>
 
 
-        <div class="page">
-            <div class=" fade-in-container-1">
 
 
-                <div id="selfphoto">
-                    <img src="images\hello.png" alt="Hello!"
-                         width="400" />
-
-                </div>
+    </div>
 
 
-
-                <p2>
-                    I am 26 years old and I am a self taught developer.
-                    I also study languages (currently Portuguese!), martial arts (such as Kickboxing, Capoeria and Brasillian Ju Jitsu),
-                    as well as spend time with my partner and walking at the beach or in the forest.
-                </p2>
+    <div class="page">
+        <div class=" fade-in-container-1">
 
 
-
+            <div class="selfphoto">
+                <img id src="images\hello.png"
+                 width="400" />
 
             </div>
 
 
+            <div class="text"
+                    <p1>
+                    I am 26 years old and I am a self taught developer.
+
+                    </p1>
+                </div>
+
+
+
+        </div>
 
 
 
@@ -85,87 +88,65 @@
 
 
 
-            <div class="content-greybackground">
-                <div class=" fade-in-container-2">
+
+
+        <div class="content-greybackground">
+            <div class=" fade-in-container-2">
 
 
 
-
-                    <p2>
-                        I am 26 years old and I am a self taught developer.
-                        I also study languages (currently Portuguese!), martial arts (such as Kickboxing, Capoeria and Brasillian Ju Jitsu),
+                <div class="text">
+                    <p2 id="grey">
+                        I also study languages (currently Portuguese!), martial arts (such as Kickboxing and Capoeria),
                         as well as spend time with my partner and walking at the beach or in the forest.
                     </p2>
-
-
-
-                    <div class=" img">
-
-                        <img src="images\xchurch_sunset_sand.jpg" alt="sunset picture of Christchurch">
-                    </div>
-
                 </div>
+
+
+                <div class=" img">
+                    
+                    <img src="images\xchurch_sunset_sand.jpg" alt="sunset picture of Christchurch">
+                </div>
+
             </div>
         </div>
+    </div>
 
 
-            <div class="gitDetails">
-                <div class="gitDetails-content">
-                    <div class="gitDetails-text">
-                        <p>
-                            <strong>
-                                Want to see some projects?
-                            </strong>
-                            Click the button on the right to see my Github page.
-                        </p>
-                        <p>
-                    </div>
-                    <div class="button-2">
-                        <button onclick="location.href='https://github.com/EJD23579'" type="button"> <img src="images\192px-Github-desktop-logo-symbol.png" height="30" width="30"  </button>
-
-                    </div>
-
-                </div>
+    <div class="gitDetails">
+        <div class="gitDetails-content">
+            <div class="gitDetails-text">
+                <p>
+                    <strong>
+                        Want to see some projects?
+                    </strong>
+                    Click the button on the right to see my Github page.
+                </p>
+                <p>
+            </div>
+            <div class="button-2">
+                <button onclick="location.href='https://github.com/EJD23579'" type="button"> <img src="images\192px-Github-desktop-logo-symbol.png" height="30" width="30"  </button>
 
             </div>
 
-            <div class="footer">
-                <div class="footer-text">
-                    <p>
-                        Copyright © Elliot Dorey 2022
-                    </p>
-                </div>
-            </div>
-        
+        </div>
 
-    <script>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <p>
+                Copyright © Elliot Dorey 2022
+            </p>
+        </div>
+    </div>
 
 
 
-        const observer_1 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    document.querySelectorAll(".fade-in-container-1")[0].classList.add("left");
-                  
 
-                }
-            })
-        })
 
-        observer_1.observe(document.querySelector(".fade-in-container-1"));
 
-        const observer_2 = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                
-                    document.querySelectorAll(".fade-in-container-2")[0].classList.add("right");
 
-                }
-            })
-        })
-
-        observer_2.observe(document.querySelector(".fade-in-container-2"));
-    </script>
 
 
 

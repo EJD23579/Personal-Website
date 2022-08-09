@@ -5,41 +5,65 @@
     <meta charset="utf-8" />
     <title>Contact Details</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="contactScript.js"></script>
-      
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="main.js" defer></script>
+
 </head>
 <body>
+    <script>
+        /*below line to set display to be invisible */
+        jQuery('body').css('display', 'none');
+        jQuery(document).ready
+            /*Query.document.ready wraps all following code to wait until page content loaded */
+            (function () {
+                jQuery('body').fadeIn();
+            })
+
+
+
+
+
+
+
+
+    </script>
+
+
+
     <div class="container">
         <div class="navigation">
             <div class="Links">
-                <a href="index.html"> Home </a>
-
-                <a href="Career Aspirations.html"> Career Aspirations</a>
+                <a href="index.html"> Home</a>
                 <a href="skillsets.html"> Skillsets </a>
+                <a href="Career Aspirations.html"> Career Aspirations</a>
                 <a href="https://github.com/EJD23579"> Github</a>
+                <a href="Contact Details.html"> Contact Details </a>
             </div>
         </div>
 
         <h2> Contact Details </h2>
-        
-            <div id="contactText">
-                <p1><bold>Want to get in touch?</bold> Use the form on the right to send me an email, or check out my LinkedIn or Github pages below!</p1>
-            </div>
-            <div class="form">
-                <form action="https://formsubmit.co/dorey.elliot@gmail.com" method="POST">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="Name" value=""><br><br>
-                    <label for="email">Email address:</label><br>
-                    <input type="text" id="email" name="email" value=""><br><br>
-                    <label for="subject"> Subject:</label><br>
-                    <input type="text" id="subject" name="subject" value=""><br /><br />
-                    <label for="message">Message:</label><br>
-                    <textarea type="text" id="message" name="message" cols="30" rows="10" value=></textarea><br>
-                    <input type="submit" value="Submit">
 
-                </form>
-            </div>
-        
+        <canvas id="bg">
+        </canvas>
+
+        <div id="contactText">
+            <p1><bold>Want to get in touch?</bold> Use the form on the right to send me an email, or check out my LinkedIn or Github pages below!</p1>
+        </div>
+        <div class="form">
+            <form action="https://formsubmit.co/397487d3686b2c2202d04bb7295f46a3" method="POST">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="Name" value=""><br><br>
+                <label for="email">Email address:</label><br>
+                <input type="text" id="email" name="email" value=""><br><br>
+                <label for="subject"> Subject:</label><br>
+                <input type="text" id="subject" name="subject" value=""><br /><br />
+                <label for="message">Message:</label><br>
+                <textarea type="text" id="message" name="message" cols="30" rows="10" value=></textarea><br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
 
         <div class="buffer">
 
@@ -73,6 +97,6 @@
                 </p>
             </div>
         </div>
-</div>
+    </div>
 </body>
 </html>

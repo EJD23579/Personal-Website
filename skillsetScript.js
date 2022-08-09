@@ -157,3 +157,44 @@ function showReact() {
         clearInterval(intervalID);
     }
 }
+
+// Docker fade in settings
+// Assign interval ID value based on 20 millisecond intervals using show function
+function fadeInDocker() {
+    intervalID = setInterval(showDocker, 20);
+
+
+}
+// Show Docker text
+function showDocker() {
+    var docker = document.getElementById("showDocker");
+    opacity = Number(window.getComputedStyle(docker).getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity = opacity + 0.1;
+        docker.style.opacity = opacity;
+    }
+    else {
+        clearInterval(intervalID);
+    }
+}
+
+
+// AWS fade in settings
+// Assign interval ID value based on 20 millisecond intervals using show function
+function fadeInAWS() {
+    intervalID = setInterval(showAWS, 20);
+
+
+}
+// Show AWS text
+function showAWS() {
+    var aws = document.getElementById("showAWS");
+    opacity = Number(window.getComputedStyle(aws).getPropertyValue("opacity"));
+    if (opacity < 1) {
+        opacity = opacity + 0.1;
+        aws.style.opacity = opacity;
+    }
+    else {
+        clearInterval(intervalID);
+    }
+}
