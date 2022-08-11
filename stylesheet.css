@@ -58,7 +58,7 @@ canvas {
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100%;
+    width: auto;
     margin: 0px;
 }
 
@@ -403,6 +403,16 @@ h2 {
 
 /*Landing page END*/
 /*Skillsets START*/
+
+
+.skill-text {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
+}
+
+
+
 .skillset {
     display: flex;
     flex-direction: column;
@@ -593,7 +603,12 @@ h2 {
 
 /*Career Aspirations START*/
 
+.career-text {
+    display: flex;
+    flex-direction: column;
+    padding: 36px;
 
+}
 
 
 
@@ -605,6 +620,7 @@ h2 {
 
 #contactText {
     display:flex;
+    
     margin-left:200px;
     align-content:flex-end;
     max-width: 200px;
@@ -616,8 +632,11 @@ h2 {
     display:flex;
     justify-content:flex-end;
     margin-right: 10em;
-    border-color:none;
+
+    
+    
 }
+
 
 
 .buffer{

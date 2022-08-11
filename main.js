@@ -25,6 +25,21 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 camera.position.setZ(30);
 
+//resizing renderer on screen resize
+
+function resize_renderer() {
+    var factor = 1; // percentage of the screen
+    var w = window.innerWidth * factor;
+    var h = window.innerHeight * factor;
+    renderer.setSize(w, h);
+    camera.aspect = w / h;
+    camera.updateProjectionMatrix();
+};
+
+//resizing renderer on screen resize
+
+window.addEventListener("resize", resize_renderer);
+
 renderer.render(scene, camera);
 
 const geometry_torus = new THREE.TorusGeometry(10, 3, 16, 100);
@@ -83,9 +98,6 @@ function animate() {
     animate();
 
 //three END
-
-
-
 
 
 
