@@ -169,19 +169,26 @@ h2 {
 
 
 
-#selfPhoto {
+.selfPhoto > img {
     display: flex;
-    height: auto;
-    justify-content: center;
-   
+    max-height: auto;
+    min-height: auto;
+    max-width: 500px;
+    min-width: 500px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
+
+
 .img > img {
-    display:flex;
+    display: flex;
     max-height: 500px;
     min-height: 500px;
     max-width: 500px;
     min-width: 500px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 .fade-in-container-1 {
@@ -468,13 +475,24 @@ h2 {
 
 /*Image Settings*/
 
+
 .python > img {
     max-height: 100px;
     min-height: 100px;
     max-width: 100px;
     min-width: 100px;
     cursor: pointer;
+    filter: grayscale(1.0);
+    background-color: transparent;
 }
+
+
+
+    .python > img:hover {
+        color: #438FC6;
+        box-shadow: 0 0 64px  #438FC6;
+        filter: grayscale(0.0);
+    }
 
 .javascript > img {
     max-height: 100px;
@@ -482,6 +500,14 @@ h2 {
     max-width: 100px;
     min-width: 100px;
     cursor: pointer;
+    filter: grayscale(1.0);
+}
+
+.javascript > img:hover {
+    color: #ffee10;
+    box-shadow: 0 0 64px #ffee10;
+    text-shadow: 0 0 64px #ffee10;
+    filter: grayscale(0.0);
 }
 
 .css > img {
@@ -490,7 +516,14 @@ h2 {
     max-width: 100px;
     min-width: 100px;
     cursor: pointer;
+    filter: grayscale(1.0);
 }
+
+    .css > img:hover {
+        color: #0A49FA;
+        box-shadow: 0 0 64px #0A49FA;
+        filter: grayscale(0.0);
+    }
 
 .postgresql > img {
     max-height: 100px;
@@ -498,32 +531,84 @@ h2 {
     max-width: 100px;
     min-width: 100px;
     cursor: pointer;
+    filter: grayscale(1.0);
 }
 
-.csh > img {
-    height: auto;
-    cursor: pointer;
+    .postgresql > img:hover {
+        color: #ffee10;
+        box-shadow: 0 0 64px #6286ED;
+        filter: grayscale(0.0);
+    }
+
+.csh{
+    height: 100px;
+   
 }
 
-.dotNet > img {
-    height: auto;
-    cursor: pointer;
+
+
+    .csh > img {
+        height: auto;
+        cursor: pointer;
+        filter: grayscale(1.0);
+    }
+
+        .csh > img:hover {
+            color: #ffee10;
+            box-shadow: 0 0 64px #CA27DC;
+            filter: grayscale(0.0);
+        }
+
+
+
+.react {
+    height: 100px;
 }
 
-.react > img {
-    height: auto;
-    cursor: pointer;
+    .react > img {
+        height: auto;
+        cursor: pointer;
+        filter: grayscale(1.0);
+    }
+
+        .react > img:hover {
+            color: #ffee10;
+            box-shadow: 0 0 64px #05CAF3;
+            filter: grayscale(0.0);
+        }
+
+.docker {
+    height:100px;
 }
 
-.docker > img {
-    height: auto;
-    cursor: pointer;
+    .docker > img {
+        height: auto;
+        cursor: pointer;
+        filter: grayscale(1.0);
+    }
+
+        .docker > img:hover {
+            color: #05CAF3;
+            box-shadow: 0 0 64px #05CAF3;
+            text-shadow: 0 0 64px #05CAF3;
+            filter: grayscale(0.0);
+        }
+
+.AWS {
+    height: 100px;
 }
 
-.AWS > img {
-    height: auto;
-    cursor: pointer;
-}
+    .AWS > img {
+        height: auto;
+        cursor: pointer;
+        filter: grayscale(1.0);
+    }
+
+        .AWS > img:hover {
+            color: #F3A105;
+            box-shadow: 0 0 64px #F3A105;
+            filter: grayscale(0.0);
+        }
 
 
 .topic-1 {
