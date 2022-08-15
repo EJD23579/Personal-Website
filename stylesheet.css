@@ -84,7 +84,15 @@ a {
     text-decoration: inherit;
     color: inherit;
     padding: 8px;
+    transition: 1s;
+
+
 }
+
+    a:hover {
+        color: #438FC6;
+    }
+
 
 
 .content-whitebackground {
@@ -175,8 +183,7 @@ h2 {
     min-height: auto;
     max-width: 500px;
     min-width: 500px;
-    overflow: hidden;
-    border-radius: 50%;
+
 }
 
 
@@ -187,8 +194,7 @@ h2 {
     min-height: 500px;
     max-width: 500px;
     min-width: 500px;
-    overflow: hidden;
-    border-radius: 50%;
+
 }
 
 .fade-in-container-1 {
@@ -483,15 +489,15 @@ h2 {
     min-width: 100px;
     cursor: pointer;
     filter: grayscale(1.0);
-    background-color: transparent;
+    will-change: filter;
+    transition: filter 1s ease-out;
 }
 
 
 
     .python > img:hover {
         color: #438FC6;
-        box-shadow: 0 0 64px  #438FC6;
-        filter: grayscale(0.0);
+        filter: grayscale(0) drop-shadow(-12px -12px 15px #438FC6) drop-shadow(12px 12px 15px #EDD616);
     }
 
 .javascript > img {
@@ -501,12 +507,12 @@ h2 {
     min-width: 100px;
     cursor: pointer;
     filter: grayscale(1.0);
+    transition:  1s;
 }
 
 .javascript > img:hover {
     color: #ffee10;
     box-shadow: 0 0 64px #ffee10;
-    text-shadow: 0 0 64px #ffee10;
     filter: grayscale(0.0);
 }
 
@@ -517,12 +523,13 @@ h2 {
     min-width: 100px;
     cursor: pointer;
     filter: grayscale(1.0);
+    will-change: filter;
+    transition: filter 1s ease-out;
 }
 
     .css > img:hover {
         color: #0A49FA;
-        box-shadow: 0 0 64px #0A49FA;
-        filter: grayscale(0.0);
+        filter: grayscale(0) drop-shadow(0px 0px 30px #0A49FA);
     }
 
 .postgresql > img {
@@ -532,12 +539,13 @@ h2 {
     min-width: 100px;
     cursor: pointer;
     filter: grayscale(1.0);
+    will-change: filter;
+    transition: filter 1s ease-out;
 }
 
     .postgresql > img:hover {
         color: #ffee10;
-        box-shadow: 0 0 64px #6286ED;
-        filter: grayscale(0.0);
+        filter: grayscale(0) drop-shadow(0px 0px 30px #6286ED);
     }
 
 .csh{
@@ -550,13 +558,15 @@ h2 {
     .csh > img {
         height: auto;
         cursor: pointer;
-        filter: grayscale(1.0);
+       
+        filter:grayscale(1.0);
+        will-change: filter;
+        transition: filter 1s ease-out;
     }
 
         .csh > img:hover {
-            color: #ffee10;
-            box-shadow: 0 0 64px #CA27DC;
-            filter: grayscale(0.0);
+            color: #CA27DC;
+            filter: grayscale(0) drop-shadow(0px 0px 30px #CA27DC);
         }
 
 
@@ -569,12 +579,13 @@ h2 {
         height: auto;
         cursor: pointer;
         filter: grayscale(1.0);
+        will-change: filter;
+        transition: filter 1s ease-out;
     }
 
         .react > img:hover {
             color: #ffee10;
-            box-shadow: 0 0 64px #05CAF3;
-            filter: grayscale(0.0);
+            filter: grayscale(0) drop-shadow(0px 0px 10px #05CAF3);
         }
 
 .docker {
@@ -585,13 +596,13 @@ h2 {
         height: auto;
         cursor: pointer;
         filter: grayscale(1.0);
+        will-change: filter;
+        transition: filter 1s ease-out;
     }
 
         .docker > img:hover {
             color: #05CAF3;
-            box-shadow: 0 0 64px #05CAF3;
-            text-shadow: 0 0 64px #05CAF3;
-            filter: grayscale(0.0);
+            filter: grayscale(0) drop-shadow(0px 0px 10px #05CAF3);
         }
 
 .AWS {
@@ -602,12 +613,13 @@ h2 {
         height: auto;
         cursor: pointer;
         filter: grayscale(1.0);
+        will-change: filter;
+        transition: filter 1s ease-out;
     }
 
         .AWS > img:hover {
             color: #F3A105;
-            box-shadow: 0 0 64px #F3A105;
-            filter: grayscale(0.0);
+            filter: grayscale(0) drop-shadow(0px 0px 10px #F3A105);
         }
 
 
